@@ -60,11 +60,15 @@ services:
   2. Выберите **MQTT**, укажите IP-адрес вашего MQTT-брокера (IP-адрес сервера, на котором запущен Home Assistant и Eclipse Mosquitto) и порт **1883**.
   3. Нажмите **«Отправить»**. Если всё введено правильно, Home Assistant подключится к MQTT-брокеру, запущенному в Docker, и покажет сообщение об успешном подключении.
 
+---
+
 ## 3. Создание пользователя в Home Assistant для OBS Studio
 
 1. Откройте веб-интерфейс Home Assistant, перейдите в **«Настройки»** → **«Люди»** и нажмите **«Добавить человека»**.
 2. Напишите имя **obs** и отметьте **«Разрешите вход в систему»**.
 3. В открывшемся окне напишите имя пользователя **obs** и придумайте пароль.
+
+---
 
 ## 4. Включение WebSocket-сервера в OBS Studio и подготовка сцен
 
@@ -76,6 +80,8 @@ services:
 
 **Подготовка сцен**
 Убедитесь, что все названия сцен в OBS Studio написаны на английском языке без пробелов. Это нужно, чтобы скрипт OBS2HA.py корректно обрабатывал имена сцен и передавал их в Home Assistant.
+
+---
 
 ## 5. Установка Python 3.x и настройка скрипта OBS2HA.py
 
@@ -127,6 +133,8 @@ setup_mute_switches_in_homeassistant("coreaudio_input_capture")
 setup_volume_control_in_homeassistant("sck_audio_capture")
 setup_volume_control_in_homeassistant("coreaudio_input_capture")
 ```
+
+---
 
 ## 6. Проверка работы скрипта OBS2HA.py
 
