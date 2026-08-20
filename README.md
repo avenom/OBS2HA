@@ -10,7 +10,7 @@
 * Установленный **Python 3.x** в системе, где будет запускаться OBS Studio.
 
 ---
-### 1. Установка MQTT-брокера Eclipse Mosquitto в локальном Docker
+## 1. Установка MQTT-брокера Eclipse Mosquitto в локальном Docker
 
 В качестве примера будет описана установка Eclipse Mosquitto в Synology NAS в Container Manager с помощью docker-compose. Для установки в обычный Docker возможно потребуется модифицировать docker-compose.
 
